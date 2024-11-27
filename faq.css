@@ -1,0 +1,103 @@
+/* Accordion Container */
+#accordion01 {
+    margin-top: 20px;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Card Styles */
+.card {
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+/* Highlight Link Styles */
+.highlight-link {
+    color: #1787e9; /* Altere esta cor para a que você preferir */
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.highlight-link:hover {
+    color: #1787e9; /* Cor do link quando o mouse estiver sobre ele */
+}
+
+/* Card Header Styles */
+.card-header {
+    background-color: #f8f9fa;
+    padding: 15px 20px;
+    cursor: pointer;
+    border-bottom: 1px solid #e0e0e0;
+    border-radius: 8px 8px 0 0;
+    transition: background-color 0.3s ease;
+}
+
+.card-header:hover {
+    background-color: #e9ecef;
+}
+
+/* Card Header Link Styles */
+.card-header a {
+    display: block;
+    text-decoration: none;
+    color: #1787e9;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.card-header a.collapsed {
+    color: #1787e9;
+}
+
+.card-header a:after {
+    content: '\f078'; /* FontAwesome down arrow */
+    font-family: 'FontAwesome';
+    float: right;
+    transition: transform 0.3s ease;
+}
+
+.card-header a.collapsed:after {
+    transform: rotate(90deg);
+}
+
+/* Card Body Styles */
+.card-body {
+    padding: 20px;
+    border-top: 1px solid #e0e0e0;
+    border-radius: 0 0 8px 8px;
+    background-color: #ffffff;
+}
+
+/* Special Heading Styles */
+.special-heading {
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Sub-title Styles */
+.special-heading.sub-title {
+    font-size: 18px;
+    color: #6c757d;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+/* Image Wrapper */
+.img-wrap img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Divider Space */
+.fw-divider-space {
+    height: 30px;
+}
